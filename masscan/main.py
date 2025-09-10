@@ -4,7 +4,7 @@ import subprocess
 
 def scan_ip(ip_address):
     # masscan 可执行文件路径
-    masscan_path = Path.cwd() / 'masscan'
+    masscan_path = Path(__file__).parent / 'masscan'
 
     # 检查 masscan 文件是否存在
     if not masscan_path.exists():
